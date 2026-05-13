@@ -6,7 +6,7 @@
 </style>
 
 <div class="page-width">
-   <h1>{{section.settings.heading_text}}</h1>
+   <h1 style="text-align:{{ section.settings.heading_alignment }};">{{section.settings.heading_text}}</h1>
    <p>{{ section.settings.paragraph_text }}</p>
    {% if section.settings.mylucky_number > 0 %}
      {{ section.settings.mylucky_number }}
@@ -72,8 +72,10 @@
             "value": "right",
             "label": "Right Align"
         }
-    ]
+    ],
+    "default": "center"
     }
+
  ],
  "blocks": [],
  "presets": [
