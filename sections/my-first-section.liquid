@@ -5,6 +5,10 @@
 <div class="page-width">
    <h1>{{section.settings.heading_text}}</h1>
    <p>{{ section.settings.paragraph_text }}</p>
+   {% if section.settings.mylucky_number > 0 %}
+     {{ section.settings.mylucky_number }}
+   {% endif %}
+   
 </div>
 
 {%schema%}
@@ -21,6 +25,12 @@
         "id": "paragraph_text",
         "label": "Paragraph",
         "default":"Tell about yourself"
+    },
+    {
+        "type": "number",
+        "id": "mylucky_number",
+        "label": "Lucky number",
+        "default": 7
     }
  ],
  "blocks": [],
