@@ -1,6 +1,7 @@
 <style>
     h1{
     padding-top: {{ section.settings.padding }}px;
+    font_size: {{ section.settings.headingfont_size }}px;
     }
 </style>
 
@@ -43,6 +44,35 @@
         "default": 5,
         "step": 5,
         "unit": "px"
+    },
+    {
+         "type": "range",
+        "id": "headingfont_size",
+        "label": "Hading Font Size",
+        "min": 5,
+        "max": 100,
+        "default": 5,
+        "step": 5,
+        "unit": "px" 
+    },
+    {
+    "type": "select",
+    "id": "heading_alignment",
+    "label": "Heading Alignment",
+    "options": [
+        {
+            "value": "left",
+            "label": "Left Align"
+        },
+        {
+            "value": "center",
+            "label": "Center Align"
+        },
+        {
+            "value": "right",
+            "label": "Right Align"
+        }
+    ]
     }
  ],
  "blocks": [],
