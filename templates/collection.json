@@ -234,7 +234,8 @@
       "settings": {
         "heading_text": "This is My First Heading here..!",
         "paragraph_text": "Hey everyone I'm writing a paragraph here for you guys.",
-        "mylucky_number": 7
+        "mylucky_number": 7,
+        "padding": 30
       }
     }
   },
