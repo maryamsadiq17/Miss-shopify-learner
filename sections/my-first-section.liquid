@@ -6,6 +6,7 @@
 </style>
 
 <div class="page-width">
+    {{ section.settings.radio }}
     {% if section.settings.show_heading==true %}
       <h1 style="text-align: {{ section.settings.heading_alignment}}; " > {{section.settings.heading_text}}</h1>
     {% endif %}
@@ -82,7 +83,22 @@
         "type": "checkbox",
         "id": "show_heading",
         "label": "Show Heading",
-        "default": true
+        "default": false
+    },
+    {
+        "type": "radio",
+        "id": "radio",
+        "label": "Radio",
+         "options": [
+            {
+                "value": "This Section is Good",
+                "label": "Good"
+            },
+            {
+                "value": "This section is not Good",
+                "label": "Bad"
+            }
+         ]
     
     }
 
